@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#FAFBFC"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="32dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+
+        <Button
+            android:id="@+id/buttonEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Edit Profile"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#2196F3"
+            android:textColor="@android:color/white"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#F5F5F5"
+            android:textColor="#FF4444"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>
