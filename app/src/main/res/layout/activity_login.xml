@@ -3,52 +3,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="32dp"
-    android:background="#FAFBFC"
+    android:padding="16dp"
     android:gravity="center">
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firebase Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@android:color/white"
-        android:padding="32dp"
-        android:elevation="4dp">
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/textViewWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#1A1A1A"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="32dp" />
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp" />
 
-        <Button
-            android:id="@+id/buttonEditProfile"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="Edit Profile"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:background="#2196F3"
-            android:textColor="@android:color/white"
-            android:stateListAnimator="@null"
-            android:layout_marginBottom="16dp" />
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login / Register"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
 
-        <Button
-            android:id="@+id/buttonLogout"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="Logout"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:background="#F5F5F5"
-            android:textColor="#FF4444"
-            android:stateListAnimator="@null" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New user? Click here to register"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="italic" />
 
 </LinearLayout>
+
